@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="aStar Fashion Template Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/styles/bootstrap-4.1.3/bootstrap.css') }}">
 <link href="{{ asset('js/plugins/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{ asset('js/plugins/OwlCarousel2-2.2.1/owl.carousel.css') }}">
@@ -92,7 +93,7 @@
 									<form action="{{ route('editsneaker', ['id' => $sneaker->id]) }}" method="POST" id="editform" class="checkout_form" enctype="multipart/form-data">
 									@csrf
 										<div class="product_image">
-											<img src="http://adam.mib-printsifu.ga/laravel/storage/app/public/image/{{$sneaker->image}}" alt="">
+											<img src="http://adam.mib-printsifu.ga/storage/app/public/image/{{$sneaker->image}}" alt="">
 											<input type="file" name="image" id="image">
 										</div>
 										<div class="row">

@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="aStar Fashion Template Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/styles/bootstrap-4.1.3/bootstrap.css') }}">
 <link href="{{ asset('js/plugins/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="{{ asset('js/plugins/OwlCarousel2-2.2.1/owl.carousel.css') }}">
@@ -64,7 +65,7 @@
 		<!-- Sidebar Navigation -->
 		<nav class="sidebar_nav">
 			<ul>
-				<li><a href="{{ route('home') }}">home<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+				<li><a href="{{ route('home') }}">home<i class="fa fa-angle-right" aria-hidden="true"></a></li>
 				<li><a href="{{ route('jackets') }}">jacket<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li><a href="{{ route('sneakers') }}">sneaker<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 			</ul>
