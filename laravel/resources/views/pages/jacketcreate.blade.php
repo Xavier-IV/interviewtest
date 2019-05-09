@@ -57,15 +57,10 @@
 	<!-- Sidebar -->
 
 	<div class="sidebar">
-		<!-- Logo -->
-		<!-- <div class="sidebar_logo">
-			<a href="#"><div>a<span>star</span></div></a>
-		</div> -->
-
 		<!-- Sidebar Navigation -->
 		<nav class="sidebar_nav">
 			<ul>
-				<li><a href="{{ route('home') }}">home<i class="fa fa-angle-right" aria-hidden="true"></a></li>
+				<li><a href="{{ route('home') }}">home<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li><a href="{{ route('jackets') }}">jacket<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 				<li><a href="{{ route('sneakers') }}">sneaker<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 			</ul>
@@ -92,9 +87,10 @@
 					<div class="col">
 						<div class="checkout_container d-flex flex-xxl-row flex-column align-items-start justify-content-start">
 							
+							<!-- Billing -->
 							<div class="billing checkout_box">
 								<div class="checkout_form_container">
-									<form action="{{ route('createjackets') }}" id="addform" method="POST" class="checkout_form" enctype="multipart/form-data">
+									<form action="{{ route('createjackets') }}" method="POST" id="addform" class="checkout_form" enctype="multipart/form-data">
 									@csrf
 										<div>
 											<input type="file" name="image" id="image">
@@ -106,13 +102,13 @@
 											</div>
 											<div class="col-lg-6">
 												<label for="checkout_last_name">Price (RM)</label>
-												<input type="number" id="price" name="price" class="checkout_input" type="number" required="required">
+												<input type="number" id="price" name="price" class="checkout_input" required="required">
 											</div>
 										</div>
 										<div>
-											<label for="checkout_company">Brand of Jacket</label>
+											<label for="checkout_company">Brand of jacket</label>
 											<input type="text" id="brand" name="brand" class="checkout_input">
-										</div>
+                                        </div>
 									    <div class="checkout_button trans_200"><a href="#" onclick="document.getElementById('addform').submit()">Add jacket</a></div>
 									</form>
 								</div>
