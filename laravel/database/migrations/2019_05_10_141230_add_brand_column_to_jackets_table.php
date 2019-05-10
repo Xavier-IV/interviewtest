@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class DropDescription extends Migration
+class AddBrandColumnToJacketsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,10 @@ class DropDescription extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('jackets', function (Blueprint $table) {
+            $table->string('brand');
+
+        });
     }
 
     /**
@@ -23,12 +26,8 @@ class DropDescription extends Migration
      */
     public function down()
     {
-        Schema::table('sneakers', function (Blueprint $table){
-            $table->dropColumn('description');
-        });
-
-        Schema::table('jackets', function (Blueprint $table){
-            $table->dropColumn('description');
+        Schema::table('jackets', function (Blueprint $table) {
+            $table->dropColumn('brand');
         });
     }
 }

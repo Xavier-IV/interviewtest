@@ -18,6 +18,7 @@ class CreateSneakersTable extends Migration
             $table->string('name');
             $table->string('brand');
             $table->double('price');
+            $table->string('description');
             $table->string('image');
             $table->timestamps();
         });
@@ -31,6 +32,5 @@ class CreateSneakersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('sneakers');
-            $table->string('description');
     }
 }
